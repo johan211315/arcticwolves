@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+
+.autores2 {
+    border: solid rgba(210, 210, 210, 0.493) 2px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 5%;
+    margin-top: 2%;
+    padding: 1em;
+}
+
+.autores2 h2{
+    width: 100%;
+    margin-bottom: 1em;
+    text-align: center;
+}
+.clase1 {
+    margin: 10px;
+    box-shadow: 0 5px 10px 0 rgba( 0 , 0 , 0 , 0.5);
+    flex: 30%;
+}
+
+.clase1:not(:hover) {
+    translate: 0 -5px;
+}
+
+.clase1:hover {
+    translate: 0 5px;
+}
+
+.clase1 img {
+    width: 100%;
+}
+
+.clase1 p {
+    padding: 20px 10px 15px 10px;
+    margin-top: 3em;
+    font-weight: bolder;
+    font-size: large;
+    background-color: red;
+    text-align: center;
+    color: white;
+    border-radius: 10%;
+}
+
+.container-carousel img{    
+    width: 350px;
+    height: auto;
+
+}
+
+.clase1 {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.container-carousel{
+    display: flex;
+    flex: 100%;
+}
+
+.marcel1{
+    display: flex;
+    flex-flow: column;
+}
+
+#destacados{
+    padding-top: 4em;
+    text-align: center;
+    font-size: 30px;
+    color: red;    
+}
+

@@ -1,0 +1,122 @@
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.librero{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+
+.librero img {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    align-items: center;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+
+.container {
+    width: 70%;
+    max-width: 800px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1.25rem;
+    transition: all 400ms;
+}
+
+.card {
+    flex: 1;
+    height: 100%;
+    transition: all 400ms;
+    cursor: pointer;
+}
+
+.card>img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card {
+    flex: 1;
+    height: 100%;
+    transition: all 400ms;
+    cursor: pointer;
+}
+
+.card:nth-child(odd) {
+    translate: 0 -20px;
+}
+
+.card:nth-child(even) {
+    translate: 0 20px;
+}
+
+.container:hover .card:not(:hover) {
+    filter: grayscale(100%);
+}
+
+.card:hover {
+    flex: 3;
+}
+.title {
+    background-image: url(../img/Fondo/cartel.webp);
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #47310d; /* Cambia este color según tu preferencia */
+    text-align: center;
+    font-family: 'piedra';
+    padding: 10% 0 10% 0;
+
+}
+
+.title:hover{
+    background-image: url(../img/Fondo/cartel.webp);
+    background-position: center;
+    background-size: cover;
+    font-size: xx-large;
+}
+
+@media screen and (min-width:1700px) {
+    .librero img {
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        position: absolute;
+        align-items: center;
+        top: 56%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+}
+    

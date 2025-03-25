@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asistente Virtual</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <button class="assistant-btn" onclick="toggleAssistant()">🐺</button>
+
+    <div class="assistant-container" id="assistant">
+        <div class="header">
+            <span>🐺 Tic the Arctic</span>
+            <button class="close-btn" onclick="toggleAssistant()">✖</button>
+        </div>
+        <div class="chat-box" id="chatBox">
+            <div class="message bot">Hola! Sóc l'assistent de Arctic, pregunta'm el que necessitis, estic per servir-te!.</div>
+        </div>
+        <div class="faq-buttons">
+            <button onclick="sendFAQ('Com et dius?')">Com et dius?</button>
+            <button onclick="sendFAQ('Què pots fer?')">Què pots fer?</button>
+            <button onclick="sendFAQ('Quina hora és?')">Quina hora és?</button>
+            <button onclick="sendFAQ('Com funciona el procés de devolucions?')">Com funciona el procés de devolucions?</button>
+            <button onclick="sendFAQ('Quins son els mètodes de pagament?')">Quins son els mètodes de pagament?</button>
+            <button onclick="sendFAQ('En quin idioma están disponibles els llibres?')">En quin idioma están disponibles els llibres?</button>
+            <button onclick="sendFAQ('Digues els best-sellers del mes')">Digues els best-sellers del mes</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+
+.destacados {
+    border: solid rgba(210, 210, 210, 0.493) 2px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 5%;
+    margin-top: 5%;
+    padding: 1em;
+}
+
+.destacados h2{
+    width: 100%;
+    margin-bottom: 1em;
+    text-align: center;
+}
+section {
+    margin: 10px;
+    box-shadow: 0 5px 10px 0 rgba( 0 , 0 , 0 , 0.5);
+}
+
+section:not(:hover) {
+    translate: 0 -5px;
+}
+
+section:hover {
+    translate: 0 5px;
+}
+
+section img {
+    width: 100%;
+}
+
+section p {
+    padding: 20px 10px 15px 20px;
+    font-weight: bolder;
+    font-size: large;
+}

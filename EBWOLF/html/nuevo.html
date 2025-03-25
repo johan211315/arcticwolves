@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libros en Carrusel</title>
+    
+    <!-- Swiper.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    
+    <style>
+        /* Contenedor del carrusel */
+        .swiper-container {
+            width: 90%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* Estilo de cada libro */
+        .swiper-slide {
+            background: #fff;
+            text-align: center;
+            font-size: 16px;
+            width: 220px;
+            padding: 15px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+            border-radius: 10px;
+        }
+
+        /* Imágenes de los libros */
+        .book-cover {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        /* Flechas de navegación */
+        .swiper-button-next, .swiper-button-prev {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="text-align:center;">Libros de Actualidad</h2>
+
+    <!-- Contenedor del carrusel -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="https://via.placeholder.com/150" class="book-cover" alt="Libro 1">
+                <p>📖 Libro 1</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="https://via.placeholder.com/150" class="book-cover" alt="Libro 2">
+                <p>📖 Libro 2</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="https://via.placeholder.com/150" class="book-cover" alt="Libro 3">
+                <p>📖 Libro 3</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="https://via.placeholder.com/150" class="book-cover" alt="Libro 4">
+                <p>📖 Libro 4</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="https://via.placeholder.com/150" class="book-cover" alt="Libro 5">
+                <p>📖 Libro 5</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="https://via.placeholder.com/150" class="book-cover" alt="Libro 5">
+                <p>📖 Libro 5</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="https://via.placeholder.com/150" class="book-cover" alt="Libro 5">
+                <p>📖 Libro 5</p>
+            </div>
+            
+        </div>
+
+        <!-- Flechas de navegación -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <!-- Swiper.js JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 3,  /* Número de libros visibles */
+            spaceBetween: 15,  /* Espacio entre libros */
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                768: { slidesPerView: 4 }, /* Ajuste para tablets */
+                1024: { slidesPerView: 5 } /* Ajuste para pantallas grandes */
+            }
+        });
+    </script>
+
+</body>
+</html>
+    

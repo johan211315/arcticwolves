@@ -1,0 +1,62 @@
+/* Contenedor del carrusel */
+.swiper-container {
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    position: relative; /* Asegura que las flechas se posicionen bien */
+}
+
+/* Contenedor de los slides */
+
+
+/* Estilo de cada libro */
+.swiper-slide {
+    background-image: url(../video/b.jpg);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-size: 16px;
+    width: 150px; /* Aumenté el ancho para mejor visualización */
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+/* Imágenes de los libros */
+.book-cover {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+
+/* Flechas de navegación */
+.swiper-button-next,
+.swiper-button-prev {
+    color: rgb(0, 0, 0); /* Color de las flechas */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10; /* Asegura que las flechas estén sobre el contenido */
+}
+
+/* Ajusta la posición de las flechas */
+.swiper-button-next {
+    right: 10px;
+}
+
+.swiper-button-prev {
+    left: 10px;
+}
+
+.swiper-container p{
+    color: rgb(255, 255, 255);
+    
+}
+
+@media screen and (max-width:600px) {
+    
+}

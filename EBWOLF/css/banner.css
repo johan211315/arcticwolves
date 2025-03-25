@@ -1,0 +1,120 @@
+.marina {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  }
+
+  .slider {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative; /* Para que la navegación manual se posicione correctamente */
+  }
+
+  /* Este contenedor ahora tiene 300% de ancho para contener las 3 diapositivas */
+  .slides {
+    width: 300%;
+    height: 100%;
+    display: flex;
+  }
+
+  /* Ocultamos los radio inputs */
+  .slides input {
+    display: none;
+  }
+
+  /* Contenedor que agrupa los slides y que se moverá para mostrar cada imagen */
+  .first {
+    display: flex;
+    width: 100%;
+    transition: margin-left 2s;
+  }
+
+  /* Cada slide ocupa el 33.33% del contenedor .slides (800px de slider) */
+  .slide {
+    width: 33.33%;
+  }
+
+  /* Las imágenes se ajustan al tamaño del slide */
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cambia a 'contain' si prefieres ver la imagen completa sin recortes */
+  }
+
+  /* Estilos para la navegación manual 
+  .navigation-manual {
+    position: absolute;
+    width: 800px;
+    left: 350px;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    z-index: 999;
+  }
+
+  .manual-btn {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 7px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+
+  .manual-btn:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  .manual-btn:hover {
+    background: rgb(255, 0, 0);
+  }
+*/
+  /* Movimiento automático según el radio seleccionado */
+  #radio1:checked ~ .first {
+    margin-left: 0%;
+  }
+
+  #radio2:checked ~ .first {
+    margin-left: -33.33%;
+  }
+
+  #radio3:checked ~ .first {
+    margin-left: -66.66%;
+  }
+
+
+
+/*CSS for automatic navigation */
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+}
+
+.navigation-auto div{
+    border: 2px solid  rgb(255, 0, 0);
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;     
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background:rgb(255, 0, 0);
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn2{
+    background:rgb(255, 0, 0);
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn3{
+    background:rgb(255, 0, 0);
+}
+
